@@ -1,0 +1,1163 @@
+<!-- 6620310148 Faizal Manla -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let It Tee</title>
+    <link rel="icon" type="images" href="img/Doing great-Photoroom.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <img src="img/Doing great-Photoroom.png" alt="" class="logo-img">
+            <h1>Let It Tee</h1>
+        </a>
+
+        
+        <ul class="nav-links">
+            <li><a href="#home">หน้าหลัก</a></li>
+            <li><a href="#shop">ช็อปปิง</a></li>
+            <li><a href="#categories">หมวดหมู่</a></li>
+            <li><a href="#about">เกี่ยวกับ</a></li>
+            <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+        
+        <div class="search-container">
+            <!-- <input type="text" class="search-bar" placeholder="Search for products..."> -->
+            <!-- <i class="fas fa-search search-icon"></i> -->
+        </div>
+        
+        <div class="nav-icons">
+            <div class="icon">
+                <!-- <i class="far fa-heart"></i> -->
+                <!-- <span class="wishlist-count">0</span> -->
+            </div>
+            <div class="icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="icon">
+                <!-- <i class="far fa-user"></i> -->
+            </div>
+        </div>
+        
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    
+    <div class="mobile-menu">
+        <ul class="mobile-links">
+            <li><a href="#home">หน้าหลัก</a></li>
+            <li><a href="#shop">ช็อปปิง</a></li>
+            <li><a href="#categories">หมวดหมู่</a></li>
+            <li><a href="#about">เกี่ยวกับ</a></li>
+            <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+        <div class="mobile-search">
+            <!-- <input type="text" placeholder="Search for products..."> -->
+        </div>
+        <div class="mobile-icons">
+            <!-- <a href="#" class="mobile-icon"> -->
+                <!-- <i class="far fa-heart"></i> -->
+                <!-- <span>รายการที่อยากได้</span> -->
+            <!-- </a> -->
+            <a href="#" class="mobile-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span>รถเข็น</span>
+            </a>
+            <!-- <a href="#" class="mobile-icon">
+                <i class="far fa-user"></i>
+                <span>บัญชี</span>
+            </a> -->
+        </div>
+    </div>
+    
+<!-- Shopping Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h3>ตะกร้าสินค้าของคุณ</h3>
+        <span id="close-cart" class="close-cart">&times;</span>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+        <p class="empty-cart">ไม่มีสินค้าในตะกร้า</p>
+    </div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>รวมทั้งหมด:</span>
+            <span id="cart-total">฿0.00</span>
+        </div>
+        <button id="checkout-btn" class="checkout-btn">ชำระเงิน</button>
+    </div>
+</div>
+
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>ทุกชิ้นคือเรื่องราว</h1>
+            <p>ค้นพบเทรนด์แฟชั่นล่าสุดกับคอลเลกชันพิเศษของเรา คุณภาพและสไตล์ที่มาบรรจบกันในทุกชิ้นที่เรานำเสนอ</p>
+            <a href="#shop" class="cta-button">ซื้อเลย</a>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>ส่งฟรี</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-undo-alt"></i>
+                    <span>คืนสินค้าง่าย</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>ชำระเงินปลอดภัย</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+ 
+    <section class="demo-content" >
+        <h2>สำรวจคอลเลกชันของเรา</h2>
+    </section>
+
+    <!-- Feature produce section -->
+     <section id="shop" class="featured-products" >
+        <div class="section-header">
+            <h2 class="section-title">สินค้าแนะนำ</h2>
+            <p class="section-subtitle">พบกับสินค้าพรีเมียมที่เราคัดเลือกด้วยตนเอง</p>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/Gemini_Generated_Image_k2pmdvk2pmdvk2pm.png')">
+                    <span class="product-badge">ขายดี</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">เสื้อผ้า</p>
+                    <h3 class="product-name">Cognito Tee</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(128)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">฿6,799</span>
+                        <span class="original-price">฿8,500</span>
+                        <span class="discount">20% OFF</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> ใส่ตะกร้า
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/Gemini_Generated_Image_xxxz3hxxxz3hxxxz.png')">
+                    <span class="product-badge">ใหม่</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">เสื้อผ้า</p>
+                    <h3 class="product-name">Horizon</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(96)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">฿1,990</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> ใส่ตะกร้า
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/Gemini_Generated_Image_yv1vo7yv1vo7yv1v.png')">
+                    <span class="product-badge">มาแรง</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">เสื้อผ้า</p>
+                    <h3 class="product-name">Flowing Silk Trousers</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(204)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">฿199.99</span>
+                        <span class="original-price">฿249.99</span>
+                        <span class="discount">20% OFF</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> ใส่ตะกร้า
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/Gemini_Generated_Image_kynebxkynebxkyne.png')">
+                    <span class="product-badge">จำนวนจำกัด</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">เสื้อผ้า</p>
+                    <h3 class="product-name">Evolve Linen</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(87)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">฿129.99</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> ใส่ตะกร้า
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/Gemini_Generated_Image_nuuk68nuuk68nuuk.png')">
+                    <span class="product-badge">ยอดนิยม</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">เสื้อผ้า</p>
+                    <h3 class="product-name">Urban Tech Cargo</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(142)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">฿79.99</span>
+                        <span class="original-price">฿99.99</span>
+                        <span class="discount">20% OFF</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> ใส่ตะกร้า
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('img/Gemini_Generated_Image_zby2sszby2sszby2.png')">
+                    <span class="product-badge">ลดราคา</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">เสื้อผ้า</p>
+                    <h3 class="product-name">Modern Drift Blazer</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(211)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">฿49.99</span>
+                        <span class="original-price">฿69.99</span>
+                        <span class="discount">29% OFF</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> ใส่ตะกร้า
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-all">
+            <!-- <a href="#" class="view-all-btn">ดูสินค้าทั้งหมด</a> -->
+             <a href="#shop" class="view-all-btn">ดูสินค้าทั้งหมด</a>
+        </div>
+    </section>
+
+    <!-- Category section -->
+    <section class="categories-section" id="categories">
+        <div class="section-header">
+            <h2 class="section-title">Fashion Categories</h2>
+            <p class="section-subtitle">สำรวจคอลเลกชันแฟชั่นแบบครบวงจรของเรา พบกับเสื้อผ้า รองเท้า และอุปกรณ์เสริมที่ครบครันสำหรับยุคใหม่</p>
+        </div>
+        
+        <div class="categories-grid">
+            <!-- Category 1 -->
+            <div class="category-card">
+                <span class="trending-badge">มาแรง</span>
+                <div class="category-icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <h3 class="category-name">เสื้อผ้า</h3>
+                <p class="category-count">สินค้า 120+ รายการ</p>
+                <!-- <a href="#" class="explore-btn">สำรวจ</a> -->
+            </div>
+            
+            <!-- Category 2 -->
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-shoe-prints"></i>
+                </div>
+                <h3 class="category-name">รองเท้า</h3>
+                <p class="category-count">สินค้า 85+ รายการ</p>
+                <!-- <a href="#" class="explore-btn">สำรวจ</a> -->
+            </div>
+            
+            <!-- Category 3 -->
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="category-name">นาฬิกา</h3>
+                <p class="category-count">สินค้า 45+ รายการ</p>
+                <!-- <a href="#" class="explore-btn">สำรวจ</a> -->
+            </div>
+            
+            <!-- Category 4 -->
+            <div class="category-card">
+                <span class="trending-badge">ใหม่</span>
+                <div class="category-icon">
+                    <i class="fas fa-vest"></i>
+                </div>
+                <h3 class="category-name">อุปกรณ์เสริม</h3>
+                <p class="category-count">สินค้า 60+ รายการ</p>
+                <!-- <a href="#" class="explore-btn">สำรวจ</a> -->
+            </div>
+            
+            <!-- Category 5 -->
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-suitcase"></i>
+                </div>
+                <h3 class="category-name">กระเป๋า</h3>
+                <p class="category-count">สินค้า35+ รายการ</p>
+                <!-- <a href="#" class="explore-btn">สำรวจ</a> -->
+            </div>
+            
+            <!-- Category 6 -->
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-male"></i>
+                </div>
+                <h3 class="category-name">หมวดดูแลตัวเอง</h3>
+                <p class="category-count">สินค้า 50+ รายการ</p>
+                <!-- <a href="#" class="explore-btn">สำรวจ</a> -->
+            </div>
+        </div>
+        
+        <div class="view-all">
+            <!-- <a href="#" class="view-all-btn">ดูหมวดหมู่ทั้งหมด</a> -->
+            <a href="#categories" class="view-all-btn">ดูหมวดหมู่ทั้งหมด</a>
+        </div>
+    </section>
+
+    <!-- About us -->
+     <section class="about-section" id="about">
+        <div class="about-content">
+            <span class="section-label">เกี่ยวกับเรา</span>
+            <h2 class="section-title">New Age of Fashion. Unseen Experience.Redefine Fashion. Redefine You.Fashion Reimagined. Experience Unseen.</h2>
+            <p class="about-text">
+                สไตล์ช็อปก่อตั้งขึ้นในปี 2558 จากวิสัยทัศน์ง่ายๆ นั่นคือการสร้างจุดหมายปลายทางสำหรับชายยุคใหม่ในการค้นพบแฟชั่นคุณภาพที่ผสมผสานระหว่างสไตล์ ความสบาย และความเป็นตัวตน
+                เราเชื่อว่าสิ่งที่คุณสวมใส่คือการแสดงออกถึงตัวตนของคุณ
+            </p>
+            
+            <p class="highlight-text">
+                เราไม่ใช่แค่ร้านขายเสื้อผ้าธรรมดา ๆ แต่เราคือผู้คัดสรรสไตล์ที่มีเป้าหมายเพื่อช่วยคุณสร้างตู้เสื้อผ้าที่พร้อมสำหรับทุกโอกาส
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>คุณภาพพรีเมียม</h4>
+                        <p>สินค้าทุกชิ้นผ่านการคัดสรรอย่างพิถีพิถันในทุกมิติ ตั้งแต่คุณภาพของวัสดุ มาตรฐานการผลิต ไปจนถึงความทนทานที่รับประกันได้</p>
+                    </div>
+                </div>
+                
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>ราคาคุ้มค่า</h4>
+                        <p>เราร่วมมือกับผู้ผลิตโดยตรงเพื่อนำเสนอราคาที่สมเหตุสมผล โดยไม่ลดทอนคุณภาพ</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>จัดส่งเร็ว</h4>
+                        <p>เรามีบริการจัดส่งฟรีและแบบด่วน เพื่อให้คุณได้รับสินค้าแฟชั่นอย่างรวดเร็ว</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>บริการจากมืออาชีพ</h4>
+                        <p>ที่ปรึกษาสไตล์ของเรายินดีช่วยคุณค้นหาสไตล์ที่เหมาะที่สุด</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">รีวิวจากลูกค้า</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">ประสบการณ์หลายปี</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">แบรนด์</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">ฝ่ายสนับสนุนลูกค้า</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-visual">
+            <div class="visual-main"></div>
+            <div class="floating-card card-1">
+                <div class="card-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <p class="card-text">บริการลูกค้าที่ได้รับรางวัลตั้งแต่ปี 2018</p>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon">
+                    <i class="fas fa-recycle"></i>
+                </div>
+                <p class="card-text">กระบวนการจัดหาวัตถุดิบที่คำนึงถึงความยั่งยืนและจริยธรรม</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Review -->
+     <section class="reviews-section">
+        <div class="section-header">
+            <span class="section-label">คำรับรองจากลูกค้า</span>
+            <h2 class="section-title" >We are proud to hear the positive feedback from customers who are impressed with our quality and service.</h2>
+            <p class="section-subtitle">ค้นพบเหตุผลที่ทุกคนไว้วางใจเราในเส้นทางแห่งสไตล์</p>
+        </div>
+        
+        <div class="reviews-slider">
+            <div class="slider-container">
+                <!-- Review 1 -->
+                <div class="review-card active">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="user-details">
+                            <h3 class="user-name">Michael Chen</h3>
+                            <div class="user-location">
+                                <i class="fas fa-map-marker-alt"></i> New York, USA
+                            </div>
+                            <div class="verified-badge">
+                                <i class="fas fa-check-circle"></i> Verified Purchase
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="review-text">
+                        The quality of the clothing is exceptional. I've purchased multiple items and each one has exceeded my expectations. The fit is perfect and the materials feel premium. Will definitely be shopping here again!
+                    </p>
+                    <div class="review-date">Posted on March 15, 2023</div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="user-details">
+                            <h3 class="user-name">Sarah Johnson</h3>
+                            <div class="user-location">
+                                <i class="fas fa-map-marker-alt"></i> London, UK
+                            </div>
+                            <div class="verified-badge">
+                                <i class="fas fa-check-circle"></i> Verified Purchase
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star-half-alt star"></i>
+                    </div>
+                    <p class="review-text">
+                        I bought a watch as a gift for my husband and he absolutely loves it! The delivery was faster than expected and the packaging was beautiful. Customer service was also very helpful when I had questions about sizing.
+                    </p>
+                    <div class="review-date">Posted on April 2, 2023</div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="user-details">
+                            <h3 class="user-name">David Rodriguez</h3>
+                            <div class="user-location">
+                                <i class="fas fa-map-marker-alt"></i> Miami, USA
+                            </div>
+                            <div class="verified-badge">
+                                <i class="fas fa-check-circle"></i> Verified Purchase
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="review-text">
+                        The shoes I ordered are not only stylish but incredibly comfortable. I've worn them all day with no issues. The size guide was accurate and the return policy gave me peace of mind. Highly recommend!
+                    </p>
+                    <div class="review-date">Posted on February 28, 2023</div>
+                </div>
+                
+                <!-- Review 4 -->
+                <div class="review-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-ninja"></i>
+                        </div>
+                        <div class="user-details">
+                            <h3 class="user-name">Emma Wilson</h3>
+                            <div class="user-location">
+                                <i class="fas fa-map-marker-alt"></i> Toronto, Canada
+                            </div>
+                            <div class="verified-badge">
+                                <i class="fas fa-check-circle"></i> Verified Purchase
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="far fa-star star"></i>
+                    </div>
+                    <p class="review-text">
+                        Great selection of accessories! I purchased a belt and sunglasses. Both items are high quality and arrived quickly. The only reason I'm not giving 5 stars is that I wish there were more color options.
+                    </p>
+                    <div class="review-date">Posted on May 10, 2023</div>
+                </div>
+                
+                <!-- Review 5 -->
+                <div class="review-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="user-details">
+                            <h3 class="user-name">James Thompson</h3>
+                            <div class="user-location">
+                                <i class="fas fa-map-marker-alt"></i> Sydney, Australia
+                            </div>
+                            <div class="verified-badge">
+                                <i class="fas fa-check-circle"></i> Verified Purchase
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="review-text">
+                        Outstanding customer service! When I had an issue with my order, they resolved it immediately and went above and beyond to make it right. The products are excellent quality and I'll be a returning customer for sure.
+                    </p>
+                    <div class="review-date">Posted on June 5, 2023</div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-dots">
+                    <div class="dot active" data-index="0"></div>
+                    <div class="dot" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                    <div class="dot" data-index="4"></div>
+                </div>
+                <button class="slider-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="stats-overview">
+            <div class="stat-item">
+                <div class="stat-value">4.8/5</div>
+                <div class="stat-label">คะแนนรีวิวเฉลี่ยจากลูกค้า</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">2.5K+</div>
+                <div class="stat-label">ลูกค้าที่พึงพอใจ</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">98%</div>
+                <div class="stat-label">แนะนำเรา</div>
+            </div>
+        </div>
+    </section>
+    <!--======================= Special Offer -->
+    <section class="offers-section">
+        <div class="section-header">
+            <span class="section-label">ดีลสุดคุ้มเฉพาะตอนนี้เท่านั้น</span>
+            <h2 class="section-title">Special promotions and great discounts</h2>
+            <p class="section-subtitle">อย่าปล่อยให้โอกาสรับข้อเสนอพิเศษจำนวนจำกัดนี้หลุดมือ!</p>
+        </div>
+        
+        <!-- Flash Sale Banner -->
+        <div class="flash-sale-banner">
+            <div class="banner-content">
+                <h3 class="banner-title">FLASH SALE</h3>
+                <p class="banner-subtitle">ลดสูงสุด 60% เฉพาะสินค้าที่ร่วมรายการ รีบช้อปก่อนโอกาสหมด!</p>
+                <div class="banner-timer">
+                    <div class="banner-time-unit">
+                        <div class="banner-time-value" id="banner-hours">12</div>
+                        <div class="banner-time-label">Hours</div>
+                    </div>
+                    <div class="banner-time-unit">
+                        <div class="banner-time-value" id="banner-minutes">45</div>
+                        <div class="banner-time-label">Minutes</div>
+                    </div>
+                    <div class="banner-time-unit">
+                        <div class="banner-time-value" id="banner-seconds">30</div>
+                        <div class="banner-time-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-cta">
+                <a href="#sale" class="banner-link">
+                    <button class="banner-btn">ซื้อเลย <i class="fas fa-arrow-right"></i></button>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="offers-container" id="sale">
+            <!-- Offer 1 -->
+            <div class="offer-card">
+                <div class="offer-badge">ลดราคาฤดูร้อน</div>
+                <div class="offer-image" style="background-image: url('img/Gemini_Generated_Image_vpxsfivpxsfivpxs.png')"></div>
+                <div class="offer-content">
+                    <h3 class="offer-title">เสื้อเชิ้ต Aqua Tropic</h3>
+                    <p class="offer-description">เย็นสบาย ดูดีมีสไตล์กับคอลเลกชันแฟชั่นฤดูร้อนสุดพิเศษ เนื้อผ้าเบา สวมใส่สบาย ดีไซน์ล้ำสมัย</p>
+                    
+                    <div class="pricing">
+                        <span class="current-price">฿79.99</span>
+                        <span class="original-price">฿129.99</span>
+                        <span class="discount">38% OFF</span>
+                    </div>
+                    
+                    <div class="countdown-timer">
+                        <div class="timer-title">ข้อเสนอสิ้นสุดในอีก</div>
+                        <div class="timer">
+                            <div class="time-unit">
+                                <div class="time-value" id="offer1-hours">08</div>
+                                <div class="time-label">Hrs</div>
+                            </div>
+                            <div class="time-unit">
+                                <div class="time-value" id="offer1-minutes">24</div>
+                                <div class="time-label">Min</div>
+                            </div>
+                            <div class="time-unit">
+                                <div class="time-value" id="offer1-seconds">12</div>
+                                <div class="time-label">Sec</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-actions">
+                        <!-- <button class="btn btn-primary"> -->
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> ใส่ตะกร้า
+                        </button>
+                        <!-- <button class="btn btn-secondary"> -->
+                            <!-- <i class="far fa-heart"></i> รายการโปรด -->
+                        <!-- </button> -->
+                    </div>
+                </div>
+            </div>
+     
+            <!-- Offer 2 -->
+            <div class="offer-card">
+                <div class="offer-badge">โปรโมชั่นด่วน</div>
+                <div class="offer-image" style="background-image: url('img/Gemini_Generated_Image_d5h2bld5h2bld5h2.png')"></div>
+                <div class="offer-content">
+                    <h3 class="offer-title">รองเท้าผ้าใบ Ascend High-Top</h3>
+                    <p class="offer-description">คอมฟอร์ตและสไตล์รวมกันในคอลเลกชันรองเท้าผ้าใบพรีเมียมของเรา สต็อกจำกัด รีบเป็นเจ้าของก่อนหมด!</p>
+                    
+                    <div class="pricing">
+                        <span class="current-price">฿89.99</span>
+                        <span class="original-price">฿149.99</span>
+                        <span class="discount">40% OFF</span>
+                    </div>
+                    
+                    <div class="countdown-timer">
+                        <div class="timer-title">ข้อเสนอสิ้นสุดในอีก</div>
+                        <div class="timer">
+                            <div class="time-unit">
+                                <div class="time-value" id="offer2-hours">05</div>
+                                <div class="time-label">Hrs</div>
+                            </div>
+                            <div class="time-unit">
+                                <div class="time-value" id="offer2-minutes">18</div>
+                                <div class="time-label">Min</div>
+                            </div>
+                            <div class="time-unit">
+                                <div class="time-value" id="offer2-seconds">45</div>
+                                <div class="time-label">Sec</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-actions">
+                        <!-- <button class="btn btn-primary"> -->
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> ใส่ตะกร้า
+                        </button>
+                        <!-- <button class="btn btn-secondary"> -->
+                            <!-- <i class="far fa-heart"></i> รายการโปรด -->
+                        <!-- </button> -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Offer 3 -->
+            <div class="offer-card">
+                <div class="offer-badge">โปรโมชั่นพิเศษช่วงสุดสัปดาห์</div>
+                <div class="offer-image" style="background-image: url('img/Gemini_Generated_Image_yfxsgoyfxsgoyfxs.png')"></div>
+                <div class="offer-content">
+                    <h3 class="offer-title">Smart Watch Pro Series Zenith</h3>
+                    <p class="offer-description">ฟีเจอร์ล้ำสมัยสำหรับการฟิตเนสและเชื่อมต่อ รองรับน้ำและแบตเตอรี่ยาวนาน</p>
+                    
+                    <div class="pricing">
+                        <span class="current-price">฿199.99</span>
+                        <span class="original-price">฿299.99</span>
+                        <span class="discount">33% OFF</span>
+                    </div>
+                    
+                    <div class="countdown-timer">
+                        <div class="timer-title">Offer Ends In</div>
+                        <div class="timer">
+                            <div class="time-unit">
+                                <div class="time-value" id="offer3-hours">23</div>
+                                <div class="time-label">Hrs</div>
+                            </div>
+                            <div class="time-unit">
+                                <div class="time-value" id="offer3-minutes">59</div>
+                                <div class="time-label">Min</div>
+                            </div>
+                            <div class="time-unit">
+                                <div class="time-value" id="offer3-seconds">59</div>
+                                <div class="time-label">Sec</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-actions">
+                        <!-- <button class="btn btn-primary"> -->
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> ใส่ตะกร้า
+                        </button>
+                        <!-- <button class="btn btn-secondary"> -->
+                            <!-- <i class="far fa-heart"></i> รายการโปรด -->
+                        <!-- </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-all-offers">
+            <a href="#" class="view-all-btn">
+                ดูข้อเสนอพิเศษทั้งหมด <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--================= Contact & support-->
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <span class="section-label">ฝ่ายช่วยเหลือและบริการลูกค้า</span>
+            <h2 class="section-title">We are here by your side to help you with every problem.</h2>
+            <p class="section-subtitle">ติดต่อทีมช่วยเหลือของเราหรือดูคำถามที่พบบ่อยเพื่อหาคำตอบได้ทันที</p>
+        </div>
+        
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h3 class="form-title">ส่งข้อความถึงเรา</h3>
+                <p class="form-subtitle">ทีมงานของเราพร้อมตอบกลับคุณภายใน 24 ชั่วโมง</p>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">ชื่อจริงและนามสกุล</label>
+                        <input type="text" id="name" class="form-control" placeholder="กรุณากรอกชื่อ-นามสกุลของคุณ" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">ที่อยู่อีเมล</label>
+                        <input type="email" id="email" class="form-control" placeholder="กรุณากรอกที่อยู่อีเมลของคุณ" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">หัวข้อ</label>
+                        <input type="text" id="subject" class="form-control" placeholder="กรุณากรอกหัวข้อข้อความของคุณ" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">เนื้อหาข้อความ</label>
+                        <textarea id="message" class="form-control" placeholder="กรุณากรอกข้อความของคุณที่นี่" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> ส่งข้อความ
+                    </button>
+                </form>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="faq-container">
+                <h3 class="faq-title">คำถามที่พบบ่อย</h3>
+                
+                <div class="faq-list">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">ข้อกำหนดและเงื่อนไขในการคืนหรือเปลี่ยนสินค้า</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>เรารับคืนสินค้าภายใน 30 วันหลังจากซื้อสินค้า สินค้าต้องอยู่ในสภาพเดิมและบรรจุภัณฑ์ครบถ้วน</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">ระยะเวลาการจัดส่งสินค้าเป็นเท่าไหร่?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>การจัดส่งแบบปกติใช้เวลาประมาณ 5–7 วันทำการ สามารถเลือกจัดส่งแบบด่วนได้ซึ่งใช้เวลา 2–3 วันทำการ สำหรับการจัดส่งระหว่างประเทศ ระยะเวลาจะขึ้นอยู่กับสถานที่ แต่โดยปกติใช้เวลาประมาณ 7–14 วันทำการ</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">ร้านของคุณจัดส่งไปต่างประเทศได้หรือไม่?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ใช่ เราจัดส่งไปยังมากกว่า 50 ประเทศทั่วโลก ค่าจัดส่งและระยะเวลาการส่งจะแตกต่างกันตามแต่ละประเทศ คุณสามารถดูตัวเลือกการจัดส่งได้ในขั้นตอนชำระเงิน</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">ฉันจะตรวจสอบสถานะคำสั่งซื้อได้อย่างไร?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>เมื่อคำสั่งซื้อของคุณถูกจัดส่งแล้ว คุณจะได้รับหมายเลขติดตามทางอีเมล คุณยังสามารถติดตามคำสั่งซื้อโดยเข้าสู่บัญชีผู้ใช้และไปที่ส่วน ‘ประวัติคำสั่งซื้อ’ ได้อีกด้วย</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">ร้านของคุณรับชำระเงินด้วยวิธีใด?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>เรารับชำระเงินผ่านบัตรเครดิตหลักทุกประเภท (Visa, MasterCard, American Express), PayPal, Apple Pay และ Google Pay การชำระเงินทั้งหมดได้รับการประมวลผลอย่างปลอดภัย</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">สามารถแก้ไขหรือยกเลิกคำสั่งซื้อได้อย่างไร?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>คุณสามารถเปลี่ยนหรือยกเลิกคำสั่งซื้อได้ภายใน 1 ชั่วโมงหลังจากทำการสั่งซื้อ โดยติดต่อทีมบริการลูกค้าของเรา หลังจากนั้นคำสั่งซื้อจะเข้าสู่กระบวนการจัดส่งและไม่สามารถแก้ไขได้</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h4 class="info-title">โทรติดต่อเรา</h4>
+                <p class="info-detail">+1 (555) 123-4567</p>
+                <p class="info-detail">Mon-Fri: 9AM-6PM EST</p>
+                <!-- <p class="info-action">โทรเลย</p> -->
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h4 class="info-title">ส่งข้อความถึงเราทางอีเมล</h4>
+                <p class="info-detail">support@styleshop.com</p>
+                <p class="info-detail">sales@styleshop.com</p>
+                <!-- <p class="info-action">ส่งอีเมล</p> -->
+            </div>
+            
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h4 class="info-title">เริ่มแชทสด</h4>
+                <p class="info-detail">พร้อมให้บริการตลอด 24 ชั่วโมงทุกวัน</p>
+                <p class="info-detail">ตอบคำถามทันใจ</p>
+                <!-- <p class="info-action">เริ่มแชท</p> -->
+            </div>
+        </div>
+    </section>
+
+
+     <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <div class="logo">
+                    <a href="#home" class="logo">
+                        <img src="img/Doing great-Photoroom.png" alt="" class="logo-img">
+                        <span class="logo-text">Let It Tee</ห>
+                    </a>
+                </div>
+                <p class="brand-description">
+                    ปลายทางชั้นนำของคุณสำหรับแฟชั่นและเครื่องประดับสมัยใหม่ เรามุ่งมั่นนำเสนอสินค้าคุณภาพสูง พร้อมบริการลูกค้าเยี่ยมยอด
+                </p>
+                <div class="social-links">
+                    <a href="https://youtu.be/5FToinvz-Wg?si=e6MpHCyK9AUALdI6" target="_blank" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://youtu.be/5FToinvz-Wg?si=e6MpHCyK9AUALdI6" target="_blank" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtu.be/5FToinvz-Wg?si=e6MpHCyK9AUALdI6" target="_blank" class="social-link twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://youtu.be/5FToinvz-Wg?si=e6MpHCyK9AUALdI6" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links-container">
+                <h3 class="footer-heading">ทางลัด</h3>
+                <ul class="footer-links">
+                    <li class="footer-link">
+                        <a href="#home">
+                            <i class="fas fa-chevron-right"></i> หน้าหลัก
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#shop">
+                            <i class="fas fa-chevron-right"></i> ช็อปปิง
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#categories">
+                            <i class="fas fa-chevron-right"></i> หมวดหมู่
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#shop">
+                            <i class="fas fa-chevron-right"></i> สินค้ามาใหม่
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#shop">
+                            <i class="fas fa-chevron-right"></i> สินค้าขายดี
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="footer-links-container">
+                <h3 class="footer-heading">บริการลูกค้า</h3>
+                <ul class="footer-links">
+                    <li class="footer-link">
+                        <a href="#contact">
+                            <i class="fas fa-chevron-right"></i> ติดต่อเรา
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="https://youtu.be/5FToinvz-Wg?si=e6MpHCyK9AUALdI6" target="_blank">
+                            <i class="fas fa-chevron-right"></i> ข้อมูลจัดส่งสินค้า
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="https://youtu.be/5FToinvz-Wg?si=e6MpHCyK9AUALdI6" target="_blank">
+                            <i class="fas fa-chevron-right"></i> นโยบายการคืนและแลกสินค้า
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="https://youtu.be/5FToinvz-Wg?si=e6MpHCyK9AUALdI6" target="_blank">
+                            <i class="fas fa-chevron-right"></i> คู่มือเลือกไซส์
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#contact">
+                            <i class="fas fa-chevron-right"></i> คำถามที่พบบ่อย
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact & Newsletter -->
+            <div class="footer-contact">
+                <h3 class="footer-heading">ช่องทางติดต่อ</h3>
+                <ul class="contact-info">
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">ที่อยู่</div>
+                            <div class="contact-value">123 Fashion Street,<br> New York,<br> NY 10001</div>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">โทรติดต่อเรา</div>
+                            <div class="contact-value">+1 (555) 123-4567</div>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">อีเมล</div>
+                            <div class="contact-value">support@styleshop.com</div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="newsletter">
+                    <p class="newsletter-text">สมัครรับจดหมายข่าวของเราเพื่อไม่พลาดข่าวสาร โปรโมชั่น และสินค้าใหม่ล่าสุด</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="ที่อยู่อีเมลของคุณ" required>
+                        <button type="submit" class="newsletter-btn">สมัครรับข่าวสาร</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2023 StyleShop. <br>6620310148 MR.Faizal Manla
+            </div>
+            <div class="policy-links">
+                <a href="https://youtu.be/5FToinvz-Wg?si=e6MpHCyK9AUALdI6" target="_blank" class="policy-link">Privacy Policy</a>
+                <a href="https://youtu.be/5FToinvz-Wg?si=e6MpHCyK9AUALdI6" target="_blank" class="policy-link">Terms & Conditions</a>
+                <a href="https://youtu.be/5FToinvz-Wg?si=e6MpHCyK9AUALdI6" target="_blank" class="policy-link">Return Policy</a>
+            </div>
+            <div class="payment-methods">
+                <div class="payment-icon">
+                    <i class="fab fa-cc-visa"></i>
+                </div>
+                <div class="payment-icon">
+                    <i class="fab fa-cc-mastercard"></i>
+                </div>
+                <div class="payment-icon">
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+                <div class="payment-icon">
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
